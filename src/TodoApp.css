@@ -1,0 +1,55 @@
+/* TodoApp.css */
+
+.App {
+    text-align: center;
+    background-image:url('https://img.freepik.com/premium-vector/cute-seamless-pattern-with-white-flowers-light-blue-background_609851-81.jpg');
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 10px;
+  }
+  
+  .input-container input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 15px;
+  }
+  
+  .input-container button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  li button {
+    margin-left: 10px;
+    padding: 3px 6px;
+    font-size: 14px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    color: rgb(52, 52, 82);
+  }
+  .tab {
+    border:solid rgb(84, 84, 134);
+    background-color: rgb(163, 163, 225);
+    width: 40%;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
