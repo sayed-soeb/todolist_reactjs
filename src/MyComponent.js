@@ -5,6 +5,7 @@ const TodoApp = () => {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState('');
 
+//To fetch data whenever the page is render
   useEffect(() => {
     fetchTodos();
   }, []);
@@ -32,6 +33,7 @@ const TodoApp = () => {
         })
       });
       const data = await response.json();
+      //To show new Todo at top
       setTodos([data,...todos]);
       setNewTodo('');
     } catch (error) {
@@ -69,6 +71,7 @@ const TodoApp = () => {
       await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
         method: 'DELETE'
       });
+      //we are basically filtering the todolist using if
       const updatedTodos = todos.filter(todo => todo.id !== id);
       setTodos(updatedTodos);
     } catch (error) {
